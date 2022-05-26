@@ -1,0 +1,371 @@
+/* =============
+ table of contents
+===============
+ 
+1. global styles
+2. HTML elements
+3. components
+4. other 
+ 
+*/
+  
+/* ===============
+   1. global style
+================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@500&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+*{
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+  img{
+max-width: 100%;
+  }
+  .cont{
+    width: 85%;
+    max-width: 1200px ;
+    margin: 0 auto;
+    position: relative;
+  }
+/* ===============
+   2. header
+================ */
+header{
+  background-color: #2E323F;
+  padding: 17px 0;
+}
+
+.fa-bars{
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  cursor: pointer;
+}
+.fa-bars:hover{
+opacity: 0.8;
+}
+nav{
+  text-align: center;
+  display: none;
+  margin-top: 5px;
+}
+nav ul li {
+  list-style-type: none;
+  margin-top: 13px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+nav ul li a:hover {
+  opacity: 0.6;
+}
+.signin{
+  margin-top: 22px;
+}
+.signup{
+  background-color: white;
+  color: #2E323F;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.signup:hover{
+  opacity: 0.9;
+  background-color: white;
+}
+.img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* javascript for hamburger */
+.nav--visible{
+  display: block;
+}
+
+/* ===============
+   3.main
+================ */
+main{
+  background-color: #3B4050;
+  padding: 40px 0;
+  text-align: center;
+}
+main h1{
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+span{
+  color: #A59678;
+}
+main p{
+  color: white;
+  width: 80%;
+  margin: 15px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+}
+button{
+  all: unset;
+  background-color: #A59678;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+
+}
+button:hover{
+  opacity: 0.9;
+}
+/* ===============
+   4.section1
+================ */
+section{
+  background-color: #dddddd;
+  padding: 30px 0;
+}
+.section1 h3{
+  color: #A59678;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+.section1 div{
+  margin-top: 20px;
+}
+.section1 p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 1000;
+}
+
+
+
+
+/* ===============
+   5.section2
+================ */
+.section2{
+  background-color: white;
+}
+.section2 h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.section2 .paragraph{
+  margin-top: 25px;
+}
+.break{
+  text-align: center;
+  color: white;
+  background-color:#3B4050;
+  margin: 20px 0;
+  padding: 50px 22px;
+  border-radius: 8px;
+  
+}
+.section2 p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 1000;
+}
+.heroimg{
+  width: 100%;
+}
+
+/* ===============
+   6.footer
+================ */
+footer{
+  background-color:#3B4050;
+  padding: 30px 0
+}
+footer h2{
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+}
+footer h3{
+  color:#A59678;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+.about{
+  margin-top: 10px;
+  text-align: center;
+}
+.about p{
+  margin-top: 6px;
+  padding: 0 22px;
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.linkfooter a{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 1000;
+}
+.linkfooter a:hover{
+  opacity: 0.6;
+}
+.linkfooter li{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 6px;
+
+}
+footer p{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 1000;
+}
+.copyright{
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+}
+/* ===============
+   7. first media query
+================ */
+@media (min-width:700px) and (max-width:1000px){
+  .heroimg{
+    width: 100%;
+  }
+  .flex-break{
+    display: flex;
+    gap: 20px;
+  }
+  .parent{
+   justify-content: space-around;
+  }
+  .linkfooter{
+    margin-left: 100px;
+  }
+  .other{
+    margin-right: 100px;
+  }
+}
+/* ===============
+   7. second media query
+================ */
+@media (min-width:1000px){
+  .ham {
+    display: none;
+  }
+  .signin{
+    margin: 13px;
+    margin-right: -10px;
+  }
+  .img1{
+min-height: 100%;
+  }
+  nav{
+    display: flex;
+    width: 80%;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .center{
+    margin: 0 auto;
+    gap: 40px;
+  }
+  nav ul li {
+    height: 100%;
+  }
+ 
+  nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content:flex-end;
+  }
+  nav ul li a{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  main{
+    text-align: unset;
+    padding: 75px 0;
+  }
+  main h1{
+    width: 40%;
+    font-size: 3.5rem;
+    margin-left: 0;
+  }
+  .pbutoon{
+    width: 55%;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
+  main p{
+    width: 76%;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .section1 div{
+    text-align: center;
+  }
+  .hardflex{
+    display: flex;
+    gap: 80px;
+  }
+
+  .break{
+    padding: 20px 30px;
+  }
+
+  .flexfotter{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about{
+    width: 40%;
+    text-align: unset;
+  }
+  .about p{
+    padding: 0;
+    text-align:unset;
+  }
+  .parent{
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
